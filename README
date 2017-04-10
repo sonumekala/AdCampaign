@@ -1,0 +1,24 @@
+To start the application, use either of the ways
+From Command line prompt
+1. java -jar AdCampaign-0.0.1-SNAPSHOT.jar
+2. mvn package
+   mvn spring-boot:run
+   
+From Eclipse IDE
+ Run/Debug AdCampaignApplication.java   
+
+Developers run embedded tomcats locally, it allows faster deployment cycles and easier debugging.
+When apps run in a cloud, it may be cheaper to use one tomcat for many apps.
+
+It would be recommended to support both, creating a war for tomcat and a jar with an embedded tomcat as 
+well.Use Spring and maven profiles to provide different configs for both environments.
+
+Testing:
+Test with either PostMan or Swagger.
+
+To launch swagger , open http://localhost:8080/swagger-ui.html 
+1.We can view all the services in the browser
+2.We can test from here.
+
+
+   
